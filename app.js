@@ -10,7 +10,7 @@ const architectureImg = document.getElementById('architectureImage');
 const foodImg = document.getElementById('foodImage');
 
 // grab slogan section elements
-const sloganInput = document.getElementsBy('slogan-text');
+const sloganInput = document.getElementById('slogan-text');
 const inputButton = document.getElementById('submit');
 const sloganList = document.getElementById('slogan-display');
 
@@ -24,7 +24,26 @@ let foodCounter = 0;
 
 /* Events */
 
+dropdownClimate.addEventListener('change', (e) => {
+    const value = e.target.value;
+    climateImg.src = `./assets/${value}-climate.png`;
+    climateCounter++;
+});
+
+dropdownArchitecture.addEventListener('change', (e) => {
+    const value = e.target.value;
+    architectureImg.src = `./assets/${value}-architecture.png`;
+    architectureCounter++;
+});
+
+dropdownFood.addEventListener('change', (e) => {
+    const value = e.target.value;
+    foodImg.src = `./assets/${value}-food.png`;
+    foodCounter++;
+});
+
 
 /* Display Functions */
+
 
 // (don't forget to call any display functions you want to run on page load!)
