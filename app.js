@@ -1,22 +1,29 @@
 /* Get DOM Elements */
-//grabbed dropdowns
+// grab dropdowns
 const dropdownClimate = document.getElementById('climate-dropdown');
 const dropdownArchitecture = document.getElementById('architecture-dropdown');
 const dropdownFood = document.getElementById('food-dropdown');
 
-//grabbed images
+// grab images
 const climateImg = document.getElementById('climateImage');
 const architectureImg = document.getElementById('architectureImage');
 const foodImg = document.getElementById('foodImage');
 
-// add slogan section
+// grab slogan section elements
 const sloganInput = document.getElementsBy('slogan-text');
 const inputButton = document.getElementById('submit');
 const sloganList = document.getElementById('slogan-display');
 
 /* State */
 
+let slogans = [];
+
+let climateCounter = 0;
+let architectureCounter = 0;
+let foodCounter = 0;
+
 /* Events */
+
 
 /* Display Functions */
 
