@@ -14,6 +14,7 @@ body {
 
 header {
     color: black;
+    text-align: center;
 }
 
 header .logo {
@@ -31,4 +32,43 @@ li {
 img {
     width: 300px;
     height: 200px;
+    padding: 5px;
+}
+
+.dropdown-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+h2 {
+    text-align: center;
+}
+
+select {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.slogan-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-display-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
