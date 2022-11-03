@@ -42,8 +42,20 @@ dropdownFood.addEventListener('change', (e) => {
     foodCounter++;
 });
 
+inputButton.addEventListener('click', () => {
+    slogans.push(sloganInput.value);
+    displaySlogans();
+    sloganInput.value = '';
+});
 
 /* Display Functions */
-
+function displaySlogans() {
+    sloganList.textContent = '';
+    for (let slogan of slogans) {
+        const li = document.createElement('li');
+        li.textContent = slogan;
+        sloganList.append(li);
+    }
+}
 
 // (don't forget to call any display functions you want to run on page load!)
