@@ -14,6 +14,12 @@ const sloganInput = document.getElementById('slogan-text');
 const inputButton = document.getElementById('submit');
 const sloganList = document.getElementById('slogan-display');
 
+// grab stat elements
+const climateElement = document.getElementById('climate-stat');
+const archElement = document.getElementById('arch-stat');
+const foodElement = document.getElementById('food-stat');
+const sloganElement = document.getElementById('slogan-stat');
+
 /* State */
 
 let slogans = [];
@@ -45,6 +51,7 @@ dropdownFood.addEventListener('change', (e) => {
 inputButton.addEventListener('click', () => {
     slogans.push(sloganInput.value);
     displaySlogans();
+    console.log(slogans);
     sloganInput.value = '';
 });
 
@@ -56,6 +63,10 @@ function displaySlogans() {
         li.textContent = slogan;
         sloganList.append(li);
     }
+}
+
+function displayStats() {
+
 }
 
 // (don't forget to call any display functions you want to run on page load!)
