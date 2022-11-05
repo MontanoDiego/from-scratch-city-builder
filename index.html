@@ -1,39 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <h1>City of your Dreams</h1>
+            <div class="dropdown-stats-div">
+                <button class="dropStats-btn">STATS</button>
+                <div class="dropdown-stats">
+                    <p>you have changed the climate <span id="climate-stat">0</span> times!</p>
+                    <p>you have changed the architecture <span id="arch-stat">0</span> times!</p>
+                    <p>you have changed the cuisine <span id="cuisine-stat">0</span> times!</p>
+                    <p>you have added <span id="slogan-stat">0</span> slogans!</p>
+                </div>
+            </div>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section class="dropdown-section">
+                <div>
+                    <h2>CLIMATE</h2>
+                    <div class="dropdown-center">
+                        <select id="climate-dropdown">
+                            <option value="tropical">Tropical</option>
+                            <option value="temperate">Temperate</option>
+                            <option value="tundra">Tundra</option>
+                        </select>
+                    </div>
+                    <div>
+                        <img id="climateImage" src="./assets/tropical-climate.PNG" alt="climate" />
+                    </div>
+                </div>
+                <div>
+                    <h2>ARCHITECTURE</h2>
+                    <div class="dropdown-center">
+                        <select id="architecture-dropdown">
+                            <option value="gothic">Gothic</option>
+                            <option value="post">Post-Modern</option>
+                            <option value="classical">Classical</option>
+                        </select>
+                    </div>
+                    <div>
+                        <img
+                            id="architectureImage"
+                            src="./assets/gothic-architecture.PNG"
+                            alt="architecture"
+                        />
+                    </div>
+                </div>
+                <div>
+                    <h2>CUISINE</h2>
+                    <div class="dropdown-center">
+                        <select id="food-dropdown">
+                            <option value="pasta">Pasta</option>
+                            <option value="meat">Meat</option>
+                            <option value="veg">Vegetable</option>
+                        </select>
+                    </div>
+                    <div>
+                        <img id="foodImage" src="./assets/pasta-food.PNG" alt="food" />
+                    </div>
+                </div>
+            </section>
+            <section class="slogan">
+                <div>
+                    <h2>City Slogan Input</h2>
+                </div>
+                <div class="slogan-input">
+                    <input id="slogan-text" type="text" />
+                    <button id="submit">add</button>
+                </div>
+                <div class="slogan-display-class">
+                    <ul id="slogan-display">    
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>

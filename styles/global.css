@@ -1,5 +1,5 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: rgb(255, 255, 255);
     --header-background: rgb(254, 251, 245);
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
@@ -13,17 +13,8 @@ body {
 }
 
 header {
-    position: sticky;
-    top: 0;
-    padding: 15px;
-    height: 80px;
-
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: black;
+    text-align: center;
 }
 
 header .logo {
@@ -33,3 +24,101 @@ header .logo {
 main {
     padding: 20px;
 }
+
+li {
+    list-style-type: square;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+}
+
+.dropdown-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+h2 {
+    text-align: center;
+}
+
+select {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.slogan-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-display-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    overflow: auto;
+}
+
+
+
+
+/* Dropdown Button */
+.dropStats-btn {
+    background-color: #000000;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown-stats-div {
+    position: relative;
+    display: inline-block;
+}
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-stats {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+  /* Links inside the dropdown */
+.dropdown-stats p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-stats span {
+    color: red;
+}
+
+  /* Change color of dropdown links on hover */
+.dropdown-stats p:hover {background-color: #ddd;}
+
+  /* Show the dropdown menu on hover */
+.dropdown-stats-div:hover .dropdown-stats {display: block;}
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-stats-div:hover .dropStats-btn {background-color: #6d6d6d;}
